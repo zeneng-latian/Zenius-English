@@ -1,0 +1,30 @@
+{:quiz {:id 102 ;;harus angka
+        :project_id 10 ;;harus angka
+        :title "example quiz" ;;harus dijepit pake "" biar jadi string
+        :ordering 1 ;;harus angka 
+        :questions [{:text "<p>“The party last night was fantastic.”<br> 
+The adjective of the sentence is _____</p>" ;;isi pake html
+                     :choice ["<p>party</p>" "<h1>last night</h1>" "<h3>fantastic</h3>"] ;; [] <- bracket, disamping ini ada 3 elemen, got the idea ?
+                     :answer "<h3>fantastic</h3>" ;;make sure answer ini identic dengan salah satu choice
+                     :ordering 1 ;;harus angka
+                     :cheat "<p>tiger soul ajsdjajdjahdhadh lkajsdajdal <br> akjsdahdjahdkjahdkahd</p>"}
+
+                    {:text "<h1>who let the dogs out ?</h1>"
+                     :choice ["<img src=\"https://lh4.googleusercontent.com/-TbffK2YncE4/AAAAAAAAAAI/AAAAAAAAAAA/B-4NHmPeEdU/photo.jpg\" alt=\"macaca 1\" width=\"128\" height=\"128\">"
+                              "<img src=\"https://31.media.tumblr.com/avatar_57d1f828bd15_128.png\" alt=\"macaca 2\" width=\"128\" height=\"128\">"
+                              "<img src=\"http://cdn4.thetechjournal.net/wp-content/uploads/images/1110/1317572461-talking-rex-the-dinosaur---fun-app-for-iphone-1.png\" alt=\"macaca 3\" width=\"128\" height=\"128\">"]
+                     :answer "<img src=\"https://31.media.tumblr.com/avatar_57d1f828bd15_128.png\" alt=\"macaca 3\" width=\"128\" height=\"128\">"
+                     :ordering 2
+                     :cheat ""}
+
+                    {:text "Those are probably the _____  coffee table in the store."
+                     :choice ["fancyest" "fanciest" "most fanciest"]
+                     :answer "fanciest"
+                     :ordering 3
+                     :cheat ""}]}}
+
+;; PESAN DARI SI TAMPAN
+;; klo mau masukin image mending bikin kerangka
+;; karena edn masukannya string (pake "") jadi klo di html juga ada "" nya di escape pake \ contohnya kayak kerangka image dibawah
+;; "<img src=\"\" alt=\"\" width=\"\" height=\"\">"
+
