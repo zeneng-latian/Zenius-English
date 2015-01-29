@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1 style="text-align : center">
+        Tes bikin halaman ber-link
+    </h1>
+    <p> Mari kita coba-coba ya</p>
+
+    <ol>
+        <li>Satu</li>
+        Satu setengah
+        <br></br>
+        <li>Dua</li>
+        Dua setengah
+        <li>Tiga
+            <br>Tiga setengah</br>
+        </li>
+
+    </ol>
+
+</body>
+</html>
